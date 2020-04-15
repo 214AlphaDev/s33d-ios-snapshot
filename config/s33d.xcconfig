@@ -1,0 +1,10 @@
+SWIFT_OBJC_BRIDGING_HEADER = frontend/frontend-Bridging-Header.h
+IPHONEOS_DEPLOYMENT_TARGET = 12.0
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/ios-swift-chat-app/CometChatPro-swift-sampleApp/Extensions
+PRODUCT_BUNDLE_IDENTIFIER = life.s33d.s33d
+CLANG_ENABLE_MODULES = YES
+TARGETED_DEVICE_FAMILY = 1
+PROVISIONING_PROFILE_SPECIFIER = S33D-Test
+ENABLE_BITCODE = NO
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+

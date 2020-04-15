@@ -1,0 +1,255 @@
+PODS:
+  - Alamofire (4.9.0)
+  - Apollo (0.10.0):
+    - Apollo/Core (= 0.10.0)
+  - Apollo/Core (0.10.0)
+  - BigInt (3.1.0):
+    - SipHash (~> 1.2)
+  - CachingExtension (1.0.12.beta):
+    - CometChatPro (= 2.0.0-beta2)
+    - RealmSwift (~> 3.16.1)
+  - CometChatPro (2.0.0-beta2)
+  - CommunityKit (0.0.2):
+    - Apollo (= 0.10.0)
+    - FlowKit (= 0.0.2)
+    - JWTDecode (= 2.2.0)
+    - KeychainAccess (= 3.1.2)
+    - RealmSwift (= 3.16.1)
+    - Sodium (= 0.8.0)
+  - Faye (2.0.0):
+    - Starscream (~> 3.1)
+  - FlowKit (0.0.2)
+  - Fusuma (1.3.3)
+  - GetStream (2.0.0):
+    - GetStream/Core (= 2.0.0)
+    - GetStream/Faye (= 2.0.0)
+  - GetStream/Core (2.0.0):
+    - Moya (~> 13.0)
+    - Swime (~> 3.0)
+  - GetStream/Faye (2.0.0):
+    - Faye
+    - GetStream/Core
+  - GetStreamActivityFeed (2.0.0):
+    - GetStream (~> 2.0)
+    - Nuke (~> 8.1)
+    - Reusable (~> 4.1)
+    - SnapKit (~> 5.0)
+  - InventoryKit (0.0.3):
+    - Apollo (= 0.10.0)
+    - CommunityKit (= 0.0.2)
+    - FlowKit (= 0.0.2)
+    - RealmSwift (= 3.16.1)
+  - JWTDecode (2.2.0)
+  - keccak.c (0.1.3)
+  - KeychainAccess (3.1.2)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - NewPopMenu (2.1.2)
+  - Nuke (8.2.0)
+  - NVActivityIndicatorView (4.6.1):
+    - NVActivityIndicatorView/Presenter (= 4.6.1)
+  - NVActivityIndicatorView/Presenter (4.6.1)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - PryntTrimmerView (3.0.0)
+  - Realm (3.16.1):
+    - Realm/Headers (= 3.16.1)
+  - Realm/Headers (3.16.1)
+  - RealmSwift (3.16.1):
+    - Realm (= 3.16.1)
+  - Result (4.1.0)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - scrypt.c (0.1.1)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
+  - secp256k1.c (0.1.2)
+  - SipHash (1.2.2)
+  - SnapKit (5.0.0)
+  - Sodium (0.8.0)
+  - Starscream (3.1.0)
+  - SteviaLayout (4.4.4)
+  - Swime (3.0.6)
+  - "UITextView+Placeholder (1.2.1)"
+  - WalletKit (0.0.1):
+    - Apollo (= 0.10.0)
+    - CommunityKit (= 0.0.2)
+    - FlowKit (= 0.0.2)
+    - KeychainAccess (= 3.1.2)
+    - web3swift (>= 2.1.10)
+  - web3swift (2.1.10):
+    - BigInt (~> 3.1)
+    - keccak.c (~> 0.1)
+    - PromiseKit (~> 6.4)
+    - scrypt.c (~> 0.1)
+    - secp256k1.c (~> 0.1)
+  - WishKit (0.0.1):
+    - Apollo (= 0.10.0)
+    - FlowKit (= 0.0.2)
+    - RealmSwift (= 3.16.1)
+  - XLActionController (5.0.0):
+    - XLActionController/Core (= 5.0.0)
+  - XLActionController/Core (5.0.0)
+  - XLPagerTabStrip (8.1.1)
+  - YPImagePicker (4.0.0):
+    - PryntTrimmerView (~> 3.0.0)
+    - SteviaLayout (~> 4.4.1)
+
+DEPENDENCIES:
+  - CachingExtension (= 1.0.12-beta)
+  - CometChatPro (~> 2.0.0-beta2)
+  - "CommunityKit (from `git@github.com:214AlphaDev/communitykitios.git`, commit `3a207f7eb01b96aef5630223e3b4dc6a1f9cd15f`)"
+  - "FlowKit (from `git@github.com:214AlphaDev/flowkit.git`, commit `ca7887ddb6219aa9c010f8546a4fe256e4b6bbd3`)"
+  - Fusuma (= 1.3.3)
+  - GetStreamActivityFeed (~> 2.0.0)
+  - "InventoryKit (from `git@github.com:214AlphaDev/inventory-kit-ios.git`, commit `97844127b81091ba14586919efbd6262bb841f42`)"
+  - NewPopMenu (= 2.1.2)
+  - NVActivityIndicatorView (= 4.6.1)
+  - SDWebImage (~> 4.0)
+  - SnapKit (= 5.0)
+  - "UITextView+Placeholder (= 1.2.1)"
+  - "WalletKit (from `git@github.com:214AlphaDev/wallet-kit.git`, commit `5b965b2483f0e857bbb29adff4132750e34705fe`)"
+  - "web3swift (from `git@github.com:214AlphaDev/web3swift.git`, commit `af07105a1f1d0c1b361950a793eee9dd34d04568`)"
+  - "WishKit (from `git@github.com:214AlphaDev/wishkit.git`, commit `21d9d687607a91c8c772f6f0e4f6c6e29aee58ae`)"
+  - XLActionController
+  - XLPagerTabStrip (= 8.1.1)
+  - YPImagePicker
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Apollo
+    - BigInt
+    - CachingExtension
+    - CometChatPro
+    - Faye
+    - Fusuma
+    - GetStream
+    - GetStreamActivityFeed
+    - JWTDecode
+    - keccak.c
+    - KeychainAccess
+    - Moya
+    - NewPopMenu
+    - Nuke
+    - NVActivityIndicatorView
+    - PromiseKit
+    - PryntTrimmerView
+    - Realm
+    - RealmSwift
+    - Result
+    - Reusable
+    - scrypt.c
+    - SDWebImage
+    - secp256k1.c
+    - SipHash
+    - SnapKit
+    - Sodium
+    - Starscream
+    - SteviaLayout
+    - Swime
+    - "UITextView+Placeholder"
+    - XLActionController
+    - XLPagerTabStrip
+    - YPImagePicker
+
+EXTERNAL SOURCES:
+  CommunityKit:
+    :commit: 3a207f7eb01b96aef5630223e3b4dc6a1f9cd15f
+    :git: "git@github.com:214AlphaDev/communitykitios.git"
+  FlowKit:
+    :commit: ca7887ddb6219aa9c010f8546a4fe256e4b6bbd3
+    :git: "git@github.com:214AlphaDev/flowkit.git"
+  InventoryKit:
+    :commit: 97844127b81091ba14586919efbd6262bb841f42
+    :git: "git@github.com:214AlphaDev/inventory-kit-ios.git"
+  WalletKit:
+    :commit: 5b965b2483f0e857bbb29adff4132750e34705fe
+    :git: "git@github.com:214AlphaDev/wallet-kit.git"
+  web3swift:
+    :commit: af07105a1f1d0c1b361950a793eee9dd34d04568
+    :git: "git@github.com:214AlphaDev/web3swift.git"
+  WishKit:
+    :commit: 21d9d687607a91c8c772f6f0e4f6c6e29aee58ae
+    :git: "git@github.com:214AlphaDev/wishkit.git"
+
+CHECKOUT OPTIONS:
+  CommunityKit:
+    :commit: 3a207f7eb01b96aef5630223e3b4dc6a1f9cd15f
+    :git: "git@github.com:214AlphaDev/communitykitios.git"
+  FlowKit:
+    :commit: ca7887ddb6219aa9c010f8546a4fe256e4b6bbd3
+    :git: "git@github.com:214AlphaDev/flowkit.git"
+  InventoryKit:
+    :commit: 97844127b81091ba14586919efbd6262bb841f42
+    :git: "git@github.com:214AlphaDev/inventory-kit-ios.git"
+  WalletKit:
+    :commit: 5b965b2483f0e857bbb29adff4132750e34705fe
+    :git: "git@github.com:214AlphaDev/wallet-kit.git"
+  web3swift:
+    :commit: af07105a1f1d0c1b361950a793eee9dd34d04568
+    :git: "git@github.com:214AlphaDev/web3swift.git"
+  WishKit:
+    :commit: 21d9d687607a91c8c772f6f0e4f6c6e29aee58ae
+    :git: "git@github.com:214AlphaDev/wishkit.git"
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Apollo: aa9b870203900b9526332ea3d12c37b4dc6ce1b9
+  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  CachingExtension: cf39bf4bc3aa48dd255501e97f574c37cbf9966b
+  CometChatPro: 6abbf72c969e5ebf2705b1378c99080ed73551bb
+  CommunityKit: 15a959c4383a16952b80ca4ac2a42687e5a61eec
+  Faye: be7f08638a7c27da87714716ab5bfc970d4eda6d
+  FlowKit: 0d2a93684c89368abadb77b6856c34f31de468ec
+  Fusuma: 3bd08c8c5341ec60c0074fa28570fea8765966f0
+  GetStream: 42e2516dff6e978e7d9614a6de79ccfab8bac084
+  GetStreamActivityFeed: eccdc0374e5e7c9e5c6623d4fb0d33aaf2465958
+  InventoryKit: b344351faacf045d39419020b25ee5b9471d9ba2
+  JWTDecode: 85a405ab16d5473e99bd89ded1d535090ebd6a0e
+  keccak.c: 859583afdaccb4e4fcc0f0096064d101580313f4
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  NewPopMenu: c6129e08e8192f6257ceb5f9a4357e1b59c6e2e7
+  Nuke: 0134d56b7c9dd3e69e9bce8bdcb37c2e0d55469f
+  NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  PryntTrimmerView: 53ac64053c7ce63cb3e27f54090f52da0734891d
+  Realm: 601cacc51d8be3b17a377ef787be0f6ee0e76cf1
+  RealmSwift: 486f2e09d5a8ccff63ed66e48d0846b111deb5e5
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  scrypt.c: b42ae06183251329d2b2c620c226fb541a4a3592
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  secp256k1.c: db47b726585d80f027423682eb369729e61b3b20
+  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  Sodium: 63c0ca312a932e6da481689537d4b35568841bdc
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  SteviaLayout: 523469269059f2c6da02820bb2ff28a5fe0780aa
+  Swime: d7b2c277503b6cea317774aedc2dce05613f8b0b
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+  WalletKit: 19e3480f1ed44f6878bf40389c1eef512262db81
+  web3swift: 2ab62132eb013b29e949f97c201a8fcf6c9e1fef
+  WishKit: 55e7f1365bd9994f38cf6840345e161da7b27822
+  XLActionController: d7dea0b162bd3977311bcba7d377b88d6b87a7b4
+  XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
+  YPImagePicker: 8039f89ad79281545fa868486f32d9bf5d65ede1
+
+PODFILE CHECKSUM: e33bb2b25fc60f49cefa7cc8c292b4060a05a591
+
+COCOAPODS: 1.8.4

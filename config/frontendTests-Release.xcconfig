@@ -1,0 +1,2 @@
+#include "frontendTests.xcconfig"
+#include "Pods/Target Support Files/Pods-frontendTests/Pods-frontendTests.release.xcconfig"

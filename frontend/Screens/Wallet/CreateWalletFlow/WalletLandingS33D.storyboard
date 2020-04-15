@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eHN-U5-eNY">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet Landing Screen-->
+        <scene sceneID="RcZ-37-oZp">
+            <objects>
+                <viewController storyboardIdentifier="WalletLandingScreen" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eHN-U5-eNY" customClass="WalletLandingScreen" customModule="s33d" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8RV-Ic-WPF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pin-F0-dyg" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.20784313730000001" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <viewLayoutGuide key="safeArea" id="CZd-S3-WXH"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXD-Bg-26B">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet_intro" translatesAutoresizingMaskIntoConstraints="NO" id="Gfa-Hk-MWP">
+                                        <rect key="frame" x="102.5" y="36" width="115" height="115"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Gfa-Hk-MWP" secondAttribute="height" multiplier="1:1" id="ssU-J6-jIh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setup or Restore an old wallet in order to gain access to banking features." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDa-qz-is7">
+                                        <rect key="frame" x="26" y="169" width="268" height="74"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aZ-VN-50V">
+                                        <rect key="frame" x="26" y="282" width="268" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="5jC-fp-rjQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="Create New Wallet">
+                                            <color key="titleColor" red="0.13333333333333333" green="0.20784313725490194" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="createWalletTapped:" destination="eHN-U5-eNY" eventType="touchUpInside" id="grZ-Mf-elW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-aR-mJy">
+                                        <rect key="frame" x="26" y="336" width="268" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="S1N-A1-sHa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="Restore Old Wallet">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="restoreWalletTapped:" destination="eHN-U5-eNY" eventType="touchUpInside" id="MeV-Xo-e5k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Gfa-Hk-MWP" firstAttribute="top" secondItem="FXD-Bg-26B" secondAttribute="top" constant="36" id="2MX-xX-Ic1"/>
+                                    <constraint firstItem="IDa-qz-is7" firstAttribute="top" secondItem="Gfa-Hk-MWP" secondAttribute="bottom" constant="18" id="7aS-3e-31S"/>
+                                    <constraint firstItem="l1L-aR-mJy" firstAttribute="top" secondItem="7aZ-VN-50V" secondAttribute="bottom" constant="10" id="EzS-Xi-Vqr"/>
+                                    <constraint firstItem="Gfa-Hk-MWP" firstAttribute="centerX" secondItem="FXD-Bg-26B" secondAttribute="centerX" id="IKW-tE-sLI"/>
+                                    <constraint firstAttribute="bottom" secondItem="l1L-aR-mJy" secondAttribute="bottom" constant="80" id="LDc-j0-kvN"/>
+                                    <constraint firstItem="7aZ-VN-50V" firstAttribute="leading" secondItem="FXD-Bg-26B" secondAttribute="leading" constant="26" id="LjO-9u-KkG"/>
+                                    <constraint firstItem="l1L-aR-mJy" firstAttribute="leading" secondItem="FXD-Bg-26B" secondAttribute="leading" constant="26" id="SGO-mR-wEi"/>
+                                    <constraint firstAttribute="trailing" secondItem="7aZ-VN-50V" secondAttribute="trailing" constant="26" id="Wf0-5G-SPW"/>
+                                    <constraint firstAttribute="trailing" secondItem="IDa-qz-is7" secondAttribute="trailing" constant="26" id="XsX-7w-7au"/>
+                                    <constraint firstItem="IDa-qz-is7" firstAttribute="leading" secondItem="FXD-Bg-26B" secondAttribute="leading" constant="26" id="YUc-tK-l4q"/>
+                                    <constraint firstItem="Gfa-Hk-MWP" firstAttribute="height" secondItem="FXD-Bg-26B" secondAttribute="height" multiplier="1:4" id="dLV-6D-KuC"/>
+                                    <constraint firstAttribute="trailing" secondItem="l1L-aR-mJy" secondAttribute="trailing" constant="26" id="jcZ-by-PQC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pin-F0-dyg" secondAttribute="trailing" id="9XP-Oc-cxB"/>
+                            <constraint firstItem="pin-F0-dyg" firstAttribute="top" secondItem="8RV-Ic-WPF" secondAttribute="top" id="afR-oX-7p2"/>
+                            <constraint firstItem="FXD-Bg-26B" firstAttribute="leading" secondItem="TDj-PG-cgs" secondAttribute="leading" id="bye-6J-8TS"/>
+                            <constraint firstAttribute="bottom" secondItem="pin-F0-dyg" secondAttribute="bottom" id="fHU-rI-oNS"/>
+                            <constraint firstItem="TDj-PG-cgs" firstAttribute="trailing" secondItem="FXD-Bg-26B" secondAttribute="trailing" id="gZu-zt-YU3"/>
+                            <constraint firstItem="FXD-Bg-26B" firstAttribute="top" secondItem="TDj-PG-cgs" secondAttribute="top" id="kc9-5S-oCr"/>
+                            <constraint firstItem="TDj-PG-cgs" firstAttribute="bottom" secondItem="FXD-Bg-26B" secondAttribute="bottom" id="m0c-DJ-WrH"/>
+                            <constraint firstItem="pin-F0-dyg" firstAttribute="leading" secondItem="8RV-Ic-WPF" secondAttribute="leading" id="xoG-xs-bU2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TDj-PG-cgs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b95-Wd-gxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="63.418290854572717"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wallet_intro" width="240" height="240"/>
+    </resources>
+</document>

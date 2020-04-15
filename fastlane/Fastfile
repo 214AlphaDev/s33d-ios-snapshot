@@ -1,0 +1,53 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform :ios
+
+lane :"s33d" do 
+  setup_ci(
+    provider: "travis",
+    force: "true"
+  )
+ 
+  match(
+    type: "appstore",
+    readonly: true,
+    git_branch: "s33d",
+    app_identifier: "life.s33d.s33d"
+  )
+ 
+  increment_version_number(
+    version_number: "1.6.2" # Set a specific version number
+  )
+
+  increment_build_number(
+    build_number: 10
+  )
+
+  gym(
+    scheme: "s33d",
+    silent: true
+  )
+
+  upload_to_testflight(
+    username:"trajanoskiborjan@gmail.com",
+    apple_id:"1466305680",
+    itc_provider:"M9DNN2CU7C",
+    uses_non_exempt_encryption: false,
+    skip_waiting_for_build_processing: true,
+    skip_submission: true
+  )
+end
+

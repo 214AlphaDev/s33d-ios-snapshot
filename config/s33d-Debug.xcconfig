@@ -1,0 +1,9 @@
+#include "s33d.xcconfig"
+#include "Pods/Target Support Files/Pods-s33d/Pods-s33d.debug.xcconfig"
+CODE_SIGN_STYLE = Manual
+CODE_SIGN_ENTITLEMENTS = frontend/frontend.entitlements
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+CODE_SIGN_IDENTITY = iPhone Distribution: Ed Thurlow (M9DNN2CU7C)
+DEVELOPMENT_TEAM = M9DNN2CU7C
+

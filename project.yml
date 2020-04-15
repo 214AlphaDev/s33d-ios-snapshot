@@ -1,0 +1,23 @@
+name: frontend # The name of the App
+configFiles:
+ Debug: config/Debug.xcconfig
+ Release: config/Release.xcconfig
+include:
+ - s33d.yml
+schemes:
+  s33d:
+    build:
+      targets:
+        s33d: [archive]
+    run:
+      config: Debug
+    test:
+      config: Debug
+    profile:
+      config: Debug
+    analyze:
+      config: Debug
+    archive:
+      config: Debug
+      customArchiveName: s33d
+      revealArchiveInOrganizer: true

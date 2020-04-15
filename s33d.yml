@@ -1,0 +1,95 @@
+targets: # The List of our targets
+ s33d:
+  info:
+   path: frontend/whitelabel-life.s33d.s33d.plist
+   properties:
+    CONFIG:
+     BACKEND_URL: https://s33d-backend.herokuapp.com/api
+     ALTERNATIVE_URL: https://s33d-backend-london.herokuapp.com/api
+     FEED_KEY: "g9j6jztke7zg"
+     FEED_APP_ID: "61470"
+     FEED_SLUG: "s33d"
+     CHAT_REGION: eu
+     CHAT_SEARCH_TITLE: "Search Gardener"
+     CHAT_TAB_BAR_TITLE: "Gardeners" 
+     GLOBAL_LINE: line-white
+     GLOBAL_LOGO: s33d-logo
+     GLOBAL_WHITELABEL_CUSTOMER: s33d
+     GLOBAL_LOGO_LEFT_OFFSET: 0
+     GLOBAL_LOGO_RIGHT_OFFSET: 0
+     GLOBAL_WHITELABEL_COLOR: FFFFFF
+     GLOBAL_BACKGROUND_COLOR: 23354a
+     GLOBAL_BAR_BUTTON_BACKGROUND_COLOR: d3d3d3
+     GLOBAL_SOLID_BUTTON_BACKGROUND_COLOR: FFFFFF
+     GLOBAL_SOLID_BUTTON_NORMAL_STATE_BACKGROUND_COLOR: FFFFFF
+     GLOBAL_SOLID_BUTTON_SELECTED_STATE_BACKGROUND_COLOR: FFFFFF
+     GLOBAL_SOLID_BUTTON_HIGHLIGHTED_STATE_BACKGROUND_COLOR: D3D3D3
+     GLOBAL_SOLID_BUTTON_DISABLED_STATE_BACKGROUND_COLOR: D3D3D3
+     GLOBAL_SOLID_BUTTON_TITLE_COLOR: 1d3147
+     GLOBAL_TRANSPARENT_BUTTON_BORDER_COLOR: FFFFFF
+     GLOBAL_TRANSPARENT_BUTTON_TITLE_COLOR: FFFFFF
+     GLOBAL_TRANSPARENT_BUTTON_HIGHLIGHTED_COLOR: D3D3D3
+     GLOBAL_LINE_SEPARATOR_BACKGROUND_COLOR_WHITE_AMOUNT: 1.0
+     GLOBAL_NAVIGATION_BAR_TINT_COLOR: 81bbff
+     GLOBAL_NAVIGATION_BAR_TEXT_ATTRIBUTE_COLOR: FFFFFF
+     GLOBAL_NAVIGATION_BAR_BACK_BUTTON_TINT_COLOR: FFFFFF
+     GLOBAL_TAB_BAR_IS_TRANSLUCENT: false
+     GLOBAL_TAB_BAR_TINT_COLOR: 31455c
+     GLOBAL_TAB_BAR_UNSELECTED_ITEM_TINT_COLOR: d3d3d3
+     LEARN_TAB_BAR_ICON: learn_tab_icon
+     LEARN_TAB_BAR_ICON_SELECTED: learn_tab_icon_selected
+     APPLICATION_APPROVED_TEXT: Congratulation! Your application has been accepted and now you are a S33D Gardner. Thanks for joining to our project.
+     APPLICATION_APPROVED_BUTTON_TEXT: Enter S33D App
+     APPLICATION_REJECTION_SCREEN_TITLE: S33D Administration
+     APPLICATION_SUBMIT_TEXT: Why you should become a S33D Gardner?
+     APPLICATION_LIST_TITLE: Review Gardner Applications
+     REQUEST_LOGIN_SCREEN_TEXT_COLOR: FFFFFF
+     REQUEST_LOGIN_SCREEN_FOREGROUND_COLOR: d3d3d3
+     STORYBOARD_WALLET_LANDING: WalletLandingS33D
+     STORYBOARD_LEARN_SCREEN: LearnScreenS33D
+     WALLET_BALANCE_VIEW1_CURRENCY_NAME: Hemp
+     WALLET_BALANCE_VIEW1_CURRENCY_SYMBOL: HMP
+     WALLET_BALANCE_VIEW1_CURRENCY_ICON: hemp_token
+     WALLET_BALANCE_VIEW2_CURRENCY_NAME: Papaya
+     WALLET_BALANCE_VIEW2_CURRENCY_SYMBOL: PYA
+     WALLET_BALANCE_VIEW2_CURRENCY_ICON: papaya_token
+     MARKETPLACE_CREATE_SCREEN_PHOTO_ICON: photo-white
+     SIGN_UP_SCREEN_CAMERA_ICON: camera-icon-white
+     SIGN_UP_SCREEN_TEXT_COLOR: FFFFFF
+     SIGN_UP_SCREEN_FOREGROUND_COLOR: d3d3d3
+    Authentication:
+     APP_ID: 9205c49651ba0f
+    UIApperance: Custom
+    UIAppearanceFont:
+     regular: Futura-Medium
+     bold: Futura-Bold
+     italic: Futura-MediumItalic
+    UIAppearanceSize:
+     CORNER_RADIUS: 5
+     Padding: 0
+    UIAppearanceColor:
+     NAVIGATION_BAR_COLOR: 31455c
+     NAVIGATION_BAR_TITLE_COLOR: FFFFFF
+     NAVIGATION_BAR_BUTTON_TINT_COLOR: FFFFFF
+     BACKGROUND_COLOR: 31455c
+     LOGIN_BUTTON_TINT_COLOR: 31455c
+     LOGO_TINT_COLOR: FFFFFF
+     RIGHT_BUBBLE_BACKGROUND_COLOR: 31455c
+  configFiles:
+   Debug: config/s33d-Debug.xcconfig
+   Release: config/s33d-Release.xcconfig
+  type: application
+  settings:
+   base:
+    PRODUCT_BUNDLE_IDENTIFIER: life.s33d.s33d
+    INFOPLIST_FILE: frontend/s33d.plist
+    ASSETCATALOG_COMPILER_APPICON_NAME: AppIconS33D
+  platform: iOS
+  deploymentTarget: "12.1"
+  sources:
+   - path: frontend
+   - path: ios-swift-chat-app/CometChatPro-swift-sampleApp 
+     excludes: 
+      - "View/Base.lproj/LaunchScreen.storyboard" 
+      - "AppDelegate.swift"
+      - "Controller/Chat/ChatViewController copy.swift"
